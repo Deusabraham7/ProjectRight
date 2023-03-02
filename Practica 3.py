@@ -15,6 +15,9 @@ PrecioTenencia = PrecioAuto*ImpuestoTenencia
 
 print ("El precio de tenencia es ",PrecioTenencia)
 
+print ("El nombre es :"+Nombre)
+print
+
 
 
 

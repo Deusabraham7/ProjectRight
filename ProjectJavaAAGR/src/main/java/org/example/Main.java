@@ -5,6 +5,71 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        //desarrollar un programa que le pida al usuario su nombre , su apeliido , su domicilio , cuanto cotizo en 2022 , cuanto impuesto va a pagar.
+        //declarar constante de isr-12%
+
+        /*Scanner Escanner = new Scanner(System.in);
+
+        String Nombre;
+        String Apellido;
+        String Domicilio;
+        double cotizacion;
+        double impuesto;
+        final double isr = 0.12;
+
+
+        System.out.println("Ingrese su nombre");
+        Nombre = Escanner.nextLine();
+        System.out.println("Ingrese su apellido");
+        Apellido = Escanner.nextLine();
+        System.out.println("Ingrese domicilio");
+        Domicilio = Escanner.nextLine();
+        System.out.println("Ingrese su cotizacion ");
+        cotizacion = Escanner.nextDouble();
+
+        impuesto=cotizacion*isr;
+
+        System.out.println("El impuesto es: "+impuesto);
+
+
+        System.out.println("El nombre es :"+Nombre);
+        System.out.println("El apellido es :"+Apellido);
+        System.out.println("El domicilio es :"+Domicilio);
+        System.out.println("la cotizacion es:"+cotizacion);
+
+         */
+
+        //paso 1 pedir al usuario su nombre , su apellido ,domicilio y el precio de su auto
+        //paso 2 calcular el impuesto de tenencia de el 1.3% de el costo del carro
+       /* Scanner Escanner = new Scanner(System.in);
+
+        String Nombre;
+        String Apellido;
+        String domicilio;
+        double precio;
+        final double It=0.013;
+        double impuesto;
+
+        System.out.println("Ingrese su nombre:");
+        Nombre = Escanner.nextLine();
+        System.out.println("Ingrese su apellido:");
+        Apellido = Escanner.nextLine();
+        System.out.println("Ingrese su domicilio:");
+        domicilio = Escanner.nextLine();
+        System.out.println("Ingrese el precio del auto:");
+        precio = Escanner.nextDouble();
+
+        impuesto = precio*It;
+
+
+        System.out.println("el impuesto de tenencia es :"+impuesto);
+
+        System.out.println("El nombre es :"+Nombre);
+        System.out.println("El apellido es :"+Apellido);
+        System.out.println("El domicilio es :"+domicilio);
+        System.out.println("El precio del auto es :"+precio);
+
+        */
 
         //Desarrollar un programa que le pida al usuario su nombre , su edad, domicilio,precio de vivienda
         //calcular el predial 1.8% de impuesto
@@ -71,9 +136,87 @@ public class Main {
         System.out.println("El numero 4 es :"+numero4);
 
         */
-        for (int i=0;i<100;i++){
-            System.out.println("i vale: "+i);
+        /*
+        Scanner escanner = new Scanner(System.in);
+        for (int i=0;i<5;i++){
+            String nombre;
+            System.out.println("Ingrese su nombre ");
+            nombre= escanner.nextLine();
+            System.out.println("Su nombre es: "+nombre);
+
         }
+
+         */
+
+        //Ingresa un numero
+        //elevar el numero al cuadrado
+
+       /* Scanner escanner = new Scanner(System.in);
+
+        for (int i=0;i<3;i++){
+            int numero;
+            System.out.println("Ingrese un numero");
+            numero= escanner.nextInt();
+          int Numero=numero*numero;
+            System.out.println("El resultado es:"+Numero);
+
+        }
+
+        */
+
+        //Ingresa numero 1
+        // ingresa numero 2
+        // que nos sume los dos antiguos numeros
+        //repetirlo 6 veces
+
+
+        /*Scanner escanner  = new Scanner(System.in);
+
+
+        for (int i=0;i<6;i++){
+            int numero1;
+            int numero2;
+            System.out.println("Ingrese el primer numero:");
+            numero1 = escanner.nextInt();
+            System.out.println("Ingrese el segundo numero:");
+            numero2 = escanner.nextInt();
+
+            int Suma = numero1+numero2;
+            System.out.println("El resultado de la Suma es:"+Suma);
+        }
+
+         */
+        //ingrese su edad y que le muestre si es mayor de edad o menor de edad
+        // 4 veces
+
+       /* Scanner escanner = new Scanner(System.in);
+
+        for (int i=0;i<4;i++){
+            int edad;
+            System.out.println("ingrese su edad:");
+            edad= escanner.nextInt();
+            if (edad>17){
+                System.out.println("eres mayor de edad");
+            }
+            else {
+                System.out.println("eres menor de edad");
+            }
+            System.out.println("la edad fue:"+edad);
+        }
+        */
+
+        double miArray Double[]= new Double(7);
+        for (int i=0;i<7;i++){
+            miArray Double[i]=Scanner.nextDouble();
+p
+        }
+
+
+
+
+
+
+
 
 
 
