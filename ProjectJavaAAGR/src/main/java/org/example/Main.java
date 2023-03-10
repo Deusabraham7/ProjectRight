@@ -1,5 +1,7 @@
 package org.example;
 
+import javax.swing.*;
+import javax.swing.plaf.synth.SynthLookAndFeel;
 import java.sql.SQLOutput;
 import java.util.*;
 
@@ -203,29 +205,66 @@ public class Main {
             }
             System.out.println("la edad fue:"+edad);
         }
+
+        double miArray Double[]=new Double(7);
+        for (int i = 0; i < 7; i++) {
+            miArray Double[ i]=Scanner.nextDouble();
+
+        }
         */
 
-        double miArray Double[]= new Double(7);
-        for (int i=0;i<7;i++){
-            miArray Double[i]=Scanner.nextDouble();
-p
+/*
+
+        JOptionPane.showMessageDialog(null, "Hola mundo");
+        int numero = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un numero"));
+
+        JOptionPane.showMessageDialog(null, "El numero: " + numero);
+
+        if(numero>18)
+        {
+            JOptionPane.showMessageDialog(null, "El numero es mayor a 18 años");
+        }
+        else{
+
+        }
+
+        for(int i = 0; i<11;i++){ // 0
+            JOptionPane.showMessageDialog(null,"Hola, la varibale i vale: " + i);
+        }
+        */
+
+        double  nums[] = new double[10];
+
+        nums[0] = 10;
+        nums[1] = 100;
+        nums[2] = 1000;
+        nums[3] = 10000;
+        nums[4] = 100000;
+        nums[5] = 1000000;
+        nums[6] = 10000000;
+        nums[7] = 100000000;
+        nums[8] = 1000000000;
+        nums[9] = 1000000000;
+
+        JOptionPane.showMessageDialog(null, "El numero en la posición 1: " + nums[0]);
+
+        for (int i = 0; i<10;i++)
+        {
+            nums[i] = Double.parseDouble(JOptionPane.showInputDialog("Ingresa el numero en la posición " + i + ":"));
         }
 
 
+        JOptionPane.showMessageDialog(null, "El numero en la posicion");
 
+        //determinar el numero mayor de 3 numeros
 
+        int n1 = 0, n2 = 0, n3 = 0;
 
+        //and or && ||
+        if(n1 > n2 && n1 >n3){
 
-
-
-
-
-
-
-
-
-
-
+        }
+        if(n2>n1 );
 
 
 
@@ -235,3 +274,26 @@ p
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
