@@ -1,0 +1,246 @@
+1.Escribe un programa en Java que tome un número entero y determine si es par o impar.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+
+
+        int numero;
+        Scanner teclado = new Scanner( System.in );
+
+        System.out.printf( "Introduzca un número entero: " );
+        numero = teclado.nextInt();
+
+        if ( numero % 2 == 0 )
+        {
+            System.out.printf( "ES PAR" );
+        }
+        else
+        {
+            System.out.printf( "ES IMPAR" );
+        }
+    }
+}
+2.Escribe un programa en Java que tome dos números enteros y determine cuál es el mayor de los dos.
+  Scanner reader = new Scanner(System.in);
+        int numero1, numero2;
+
+        System.out.println("Dame el primer número");
+        numero1 = reader.nextInt();
+        System.out.println("Dame el segundo número");
+        numero2 = reader.nextInt();
+        if (numero1 > numero2)
+
+            System.out.println(numero1 + " es mayor que " + numero2);
+        else
+            System.out.println(numero2 + " es mayor que " + numero1);
+
+3.Escribe un programa en Java que tome un número entero y determine si es negativo, positivo o cero.
+ Scanner escaner = new Scanner(System.in);
+
+        System.out.println("Escribe un número:");
+
+        double numero = escaner.nextDouble();
+
+        if (numero == 0) {
+            System.out.println("El número es neutro");
+        } else if (numero < 0) {
+            System.out.println("El número es negativo");
+        } else {
+            System.out.println("El número es positivo");
+        }
+
+4.Escribe un programa en Java que tome un número entero y determine si es primo o no.
+Scanner Numero = new Scanner(System.in);
+        int contador,I,numero;
+
+        System.out.print("Ingresa un numero: ");
+        numero =Numero.nextInt();
+
+        contador = 0;
+
+        for(I = 1; I <= numero; I++)
+        {
+            if((numero % I) == 0)
+            {
+                contador++;
+            }
+        }
+
+        if(contador <= 2)
+        {
+            System.out.println("El numero es primo");
+        }else{
+            System.out.println("El numero no es primo");
+        }
+
+5.Escribe un programa en Java que tome un número entero y determine si es divisible por 3 o no.
+   Scanner reader = new Scanner(System.in);
+        int numero1,numero2;
+
+        System.out.println("Introduce un número");
+        numero1 = reader.nextInt();
+
+        System.out.println("Introduce el número por el cual quieres saber si es divisible");
+        numero2 = reader.nextInt();
+        if (numero1%numero2 == 0)
+            System.out.println(numero1 + " es divisible por " + numero2);
+        else
+            System.out.println(numero1 + " NO es divisible por " + numero2);
+
+6.Escribe un programa en Java que tome un número entero y determine si es un número perfecto o no.
+ int i, suma = 0, n;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce un número: ");
+        n = sc.nextInt();
+        for (i = 1; i < n; i++) {  // i son los divisores. Se divide desde 1 hasta n-1
+            if (n % i == 0) {
+                suma = suma + i;   // si es divisor se suma
+            }
+        }
+        if (suma == n) {           // si el numero es igual a la suma de sus divisores es perfecto
+            System.out.println("Perfecto");
+        } else {
+            System.out.println("No es perfecto");
+
+        }
+
+7.Escribe un programa en Java que tome un año y determine si es un año bisiesto o no.
+Scanner sn = new Scanner(System.in);
+
+        
+        System.out.println("Introduce un año");
+        int anio = sn.nextInt();
+
+        
+        if ((anio % 4 == 0 && anio % 100 != 0) || (anio % 100 == 0 && anio % 400 == 0)) {
+            System.out.println("El año " + anio + " es bisiesto");
+        } else {
+            System.out.println("El año " + anio + " no es bisiesto");
+        }
+
+8.Escribe un programa en Java que tome un carácter y determine si es una vocal o no.
+Scanner scanner = new Scanner(System.in);
+        String sPalabra ="murcielago";
+        int contador = 0;
+        for(int x=0;x<sPalabra.length();x++) {
+
+        }
+        for(int x=0;x<sPalabra.length();x++) {
+            if ((sPalabra.charAt(x)=='a') || (sPalabra.charAt(x)=='e') || (sPalabra.charAt(x)=='i') || (sPalabra.charAt(x)=='o') || (sPalabra.charAt(x)=='u')){
+                contador++;
+            }
+        }
+        System.out.println("La palabra " + sPalabra + "contiene " + contador + " vocales");
+
+9.Escribe un programa en Java que tome un número entero y determine si es un número de Armstrong o no.
+
+import java.util.Scanner;
+
+public class ArmstrongNumber {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Ingresa un número entero: ");
+        int number = input.nextInt();
+
+        int originalNumber, remainder, result = 0;
+        originalNumber = number;
+
+        while (originalNumber != 0) {
+            remainder = originalNumber % 10;
+            result += Math.pow(remainder, 3);
+            originalNumber /= 10;
+        }
+
+        if (result == number)
+            System.out.println(number + " es un número Armstrong.");
+        else
+            System.out.println(number + " no es un número Armstrong.");
+    }
+}
+
+
+10.Escribe un programa en Java que tome un número entero y determine si es un número palindrómico o no.
+
+
+
+public class PalindromeNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese un número entero: ");
+        int number = sc.nextInt();
+        sc.close();
+
+        int reverse = 0;
+        int original = number;
+
+        while (original != 0) {
+            int remainder = original % 10;
+            reverse = reverse * 10 + remainder;
+            original = original / 10;
+        }
+
+        if (number == reverse) {
+            System.out.println(number + " es un número palindrómico.");
+        } else {
+            System.out.println(number + " no es un número palindrómico.");
+        }
+    }
+}
+
+
+11.Escribe un programa en Java que tome un número entero y determine si es un número feliz o no.
+
+import java.util.HashSet;
+
+public class NumeroFeliz {
+
+    public static void main(String[] args) {
+        int numero = 19;
+        if(esNumeroFeliz(numero)){
+            System.out.println(numero + " es un número feliz.");
+        } else {
+            System.out.println(numero + " no es un número feliz.");
+        }
+    }
+    
+    public static boolean esNumeroFeliz(int numero){
+        HashSet<Integer> numerosVistos = new HashSet<Integer>();
+        while(!numerosVistos.contains(numero)){
+            numerosVistos.add(numero);
+            int sumaDigitosCuadrados = 0;
+            while(numero > 0){
+                int digito = numero % 10;
+                sumaDigitosCuadrados += digito * digito;
+                numero /= 10;
+            }
+            numero = sumaDigitosCuadrados;
+        }
+        return numero == 1;
+    }
+}
+
+
+12.Escribe un programa en Java que tome tres números enteros y determine cuál es el mayor de los tres.
+
+Scanner miescaner = new Scanner(System.in);
+
+        int n1, n2, n3;
+
+        System.out.println("Introduce tres numeros enteros: ");
+        n1 = miescaner.nextInt();
+        n2 = miescaner.nextInt();
+        n3 = miescaner.nextInt();
+
+        if(n1>n2 && n1>n3){
+            System.out.println("El primer numero es el mayor");
+        }
+        if(n2>n1 && n2>n3){
+            System.out.println("El segundo numero es el mayor");
+        }
+        if(n3>n1 && n3>n2){
+            System.out.println("El tercer numero es el mayor");
+        }
