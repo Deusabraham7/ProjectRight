@@ -1,0 +1,3 @@
+Algoritmo : serie de pasos para llegar a un fin con un orden
+
+Tarea:Escribir paso a paso que es lo que hago desde que me levanto , hasta que llego a la puerta de mi casa
