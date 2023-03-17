@@ -1,0 +1,8 @@
+la definicio de , ferge , merge ,pull
+
+ferge:Es decir, git fetch trae los cambios, pero los deja en otro branch, hasta que se hace el git merge para traerlos al branch local.
+
+merge:la cual realiza una fusión a tres bandas entre las dos últimas instantáneas de cada rama y
+el ancestro común a ambas, creando un nuevo commit con los cambios mezclados.
+
+pull: git pull descarga los cambios desde un repositorio remoto
