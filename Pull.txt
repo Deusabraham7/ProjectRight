@@ -1,0 +1,2 @@
+El comando git pull se emplea para extraer y descargar contenido desde un repositorio remoto y actualizar al instante el repositorio local
+para reflejar ese contenido
